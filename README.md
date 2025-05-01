@@ -38,9 +38,11 @@ Log user queries and responses (for auditing)
 
 🧠 NLP and LLM Setup
 Language Detection:
+
 Use fastText or IndicNLP lang detector.
 
 Embedding Generation:
+
 Use multilingual sentence-transformers models like paraphrase-multilingual-MiniLM-L12-v2.
 
 Vector Store:
@@ -64,17 +66,13 @@ Include source citations
 📊 Dashboard (React.js Frontend)
 Modules:
 
-KPI Visualization:
-Graphs (line, bar, pie) for Sales, Revenue, Stockouts, etc.
+KPI Visualization: Graphs (line, bar, pie) for Sales, Revenue, Stockouts, etc.
 
-Real-Time Updates:
-Websockets or long-polling for real-time data reflection
+Real-Time Updates: Websockets or long-polling for real-time data reflection
 
-Drill-Down Capability:
-Click on any metric to dive deeper into category/region
+Drill-Down Capability: Click on any metric to dive deeper into category/region
 
-Alerts:
-Notifications for anomalies (e.g., stockouts > threshold)
+Alerts: Notifications for anomalies (e.g., stockouts > threshold)
 
 Libraries:
 
@@ -83,39 +81,27 @@ Chart.js or Recharts for visualizations
 TailwindCSS or Material UI for clean UI
 
 📦 Database
-Structured Data (CRM, Financials, Ops):
-PostgreSQL / MySQL backend.
+Structured Data (CRM, Financials, Ops): PostgreSQL / MySQL backend.
 
-Vector Database (for embeddings):
-Milvus / Weaviate hosted locally or on cloud.
+Vector Database (for embeddings): Milvus / Weaviate hosted locally or on cloud.
 
 🔒 Security
-Authentication:
-JWT tokens for user sessions.
+Authentication: JWT tokens for user sessions.
 
-Authorization:
-Role-Based Access Control (Admin, Manager, Executive, etc.)
+Authorization: Role-Based Access Control (Admin, Manager, Executive, etc.)
 
-Audit Logs:
-Every query + LLM response gets logged with timestamp and user ID.
+Audit Logs: Every query + LLM response gets logged with timestamp and user ID.
 
-Data Encryption:
-HTTPS enforced communication, DB encryption at rest.
+Data Encryption: HTTPS enforced communication, DB encryption at rest.
 
 🌐 Multilingual Support
-Input:
-
-Auto-detect language (IndicNLP)
+Input: Auto-detect language (IndicNLP)
 
 Translate query to English internally
 
-Output:
+Output: Answer generated in English
 
-Answer generated in English
-
-Translate back into user’s input language before sending
-
-Use IndicTrans models or open models.
+Translate back into user’s input language before sending (Use IndicTrans models or open models).
 
 🛠 Deployment
 Dockerized services (Frontend, Backend, DBs)
@@ -126,9 +112,13 @@ CDN (Cloudflare) + Regional hosting (AWS/Mumbai region, etc.)
 
 3. Midpoint Deliverables (~50% Progress Check)
 ✅ Chatbot answering 10 basic KPIs in English + Hindi, Marathi
+
 ✅ Vector DB setup with basic embeddings
+
 ✅ React dashboard with dummy KPI graphs
+
 ✅ API-based LLM querying integrated
+
 ✅ Role-based login system working
 
 4. Tech Stack Summary
